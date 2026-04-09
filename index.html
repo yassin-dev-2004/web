@@ -8,49 +8,70 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
     .container {
-      margin-top: 100px;
+      max-width: 600px;
+    }
+
+    img {
+      width: 120px;
+      margin-bottom: 20px;
     }
 
     h1 {
       font-size: 50px;
+      margin: 10px 0;
     }
 
-    img {
-      width: 100px;
+    p {
+      font-size: 18px;
+      opacity: 0.8;
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 25px;
       display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid white;
+      padding: 12px 25px;
+      border: 2px solid white;
       text-decoration: none;
       color: white;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: white;
       color: black;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<div class="container">
-  <img src="logo.png" alt="logo">
-  <h1>OWL SYSTEMS</h1>
-  <p>Développeur Web Junior</p>
+  <div class="container">
+    <img src="logo-w.png" alt="logo">
 
-  <a class="btn" href="https://github.com/yassin-dev-2004">Mon GitHub</a>
-</div>
+    <h1>OWL SYSTEMS</h1>
+    <p>Développeur Web Junior</p>
+
+    <a class="btn" href="https://github.com/yassin-dev-2004" target="_blank">
+      Mon GitHub
+    </a>
+  </div>
 
 </body>
 </html>
